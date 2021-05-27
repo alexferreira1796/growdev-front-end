@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+}
+html, body {
+  height: 100vh;
+}
+body {
+  background: url('../img/wallpaper.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+:root {
+  --colorPrimary: #0A8FC1;
+  --colorSecondary: #1b1d20;
+  --white: '#fff',
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin-bottom: auto !important;
+}
+/* HEADER */
+.container {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 !important;
+}
+.container img {
+  color: #fff;
+  font-size: 28px;
+}
+.header {
+  padding: .75rem 0;
+  background-color: var(--colorPrimary);
+  margin-bottom: 5px;
+}
+.content-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+.menu > ul > li {
+  margin-left: 10px;
+}
+.menu > ul > li > a {
+  color: #fff;
+  transition: .3s;
+}
+.menu > ul > li > a::before {
+  content: '\25CF';
+  width: 1px;
+  height: 1px;
+  color: #fff;
+  margin-right: 10px;
+  transition: .3s;
+}
+.menu > ul > li > a:hover,
+.menu > ul > li > a:hover::before {
+  color: var(--colorSecondary);
+}
+.content {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+.content h1 {
+  font-size: 2.5em;
+  color: #fff
+}
+.bg-content {
+  background-color: rgba(27, 29, 32, 0.8);
+  border-radius: 25px;
+}
+
+/* LIST */
+.list-users {
+  width: 500px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+.list-users > ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 2px 1px var(--colorSecondary);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.list-users span {
+  font-weight: bold;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons a {
+  margin-left: 10px;
+  color: var(--colorPrimary);
+}
+#form {
+  width: 600px;
+}
+#form input {
+  width: 100%;
+}
+#form label {
+  float: left;
+  color: #fff;
+  margin-top: 10px;
+}
+#form h3.error {
+  color: #b02a37;
+  background-color: #fff;
+}
+#form h3.success {
+  color: #51a505;
+  background-color: #fff;
+}
+.error {
+  border-color: #b02a37;
+}
