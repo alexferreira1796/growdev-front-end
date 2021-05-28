@@ -4,7 +4,7 @@ window.addEventListener("load", () => {
   const api = axios.create({
     baseURL: base,
   });
-  const id = location.search.slice(1).split("=")[1];
+  const id = location.pathname.split("/cadastrar/")[1];
 
   // Listando todos os usuarios
   const element = document.querySelector(".list-users ul");
@@ -113,7 +113,7 @@ function createList(data) {
       html += `<li id="${id}">`;
       html += `<span>${name}</span>`;
       html += `<div class="icons">`;
-      html += ` <a href="cadastrar.html?id=${id}"><span class="material-icons">edit</span></a>`;
+      html += ` <a href="/cadastrar/${id}"><span class="material-icons">edit</span></a>`;
       html += ` <a href="#" data-id="${id}" class="delete"><span class="material-icons">delete</span></a>`;
       html += "</div>";
       html += "</li>";

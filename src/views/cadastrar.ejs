@@ -1,0 +1,32 @@
+<%- include("./partials/head.ejs")%>
+  <%- include("./partials/boostrap.ejs")%>
+    <%- include("./partials/header.ejs")%>
+      <main class="container">
+        <div class="content bg-content">
+          <form method="POST" action="" id="form">
+            <h3></h3>
+            <input type="hidden" name="type" class="type" value="cadastrar" />
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control name" id="name" placeholder="Nome Completo">
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" class="form-control email" id="email" placeholder="email@email.com">
+            </div>
+            <div class="form-group">
+              <label for="document">CPF</label>
+              <input type="text" class="form-control document" id="document" maxlength="11" placeholder="000.000.000-00">
+            </div>
+            <div class="form-group">
+              <label for="age">Idade</label>
+              <input type="number" class="form-control age" id="age" placeholder="Idade">
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="reset" class="btn btn-danger">Limpar</button>
+          </form>
+
+        </div>
+      </main>
+      <%- include("./partials/footer.ejs")%>
